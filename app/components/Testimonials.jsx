@@ -13,6 +13,7 @@ export default function Testimonial() {
               src="/images/person.png"
               height={280}
               width={140}
+              alt="person"
               className="md:w-36 md:h-36 z-20"
             />
             <div className="flex-col ring-1 py-24 relative shadow-xl ring-sky-400 mt-4 px-20 w-[900px] h-[300px] -ml-[70px] z-0 bg-white rounded-lg">
@@ -46,9 +47,9 @@ export default function Testimonial() {
                 />
               </div>
               <p className="text-lg italic text-gray-900 mt-1">
-                "I am proud to say that after a few months of taking this
+                I am proud to say that after a few months of taking this
                 course... I passed my exam and am now an AWS Certified Cloud
-                Practitioner!"
+                Practitioner!
               </p>
               <p className="mt-2 text-[20px] font-bold text-gray-900">
                 - Nia Kyle
@@ -56,7 +57,6 @@ export default function Testimonial() {
             </div>
             <div className="bg-[#17A8FC] ring-1 ring-sky-400 mt-4  w-[80px] h-[300px] -ml-[50px] z-10  rounded-r-lg hover:bg-blue-600">
               <div className="size-8 my-32 mx-6">
-                {" "}
                 <Image
                   src="/icons/next.png"
                   alt="nextbtn"
