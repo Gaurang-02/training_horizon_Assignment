@@ -65,26 +65,26 @@ export default function Footer() {
           </div>
           <div className="flex flex-row justify-evenly m-2 space-x-8 mt-6">
             <Image
-              src="/contact/frame-1.png"
+              src="/contact/Frame.png"
               alt="instagram"
               height={12}
               width={24}
             />
             <Image
-              src="/contact/frame-2.png"
-              alt="instagram"
+              src="/contact/Frame-1.png"
+              alt="twitter"
               height={12}
               width={24}
             />
             <Image
-              src="/contact/frame-3.png"
-              alt="instagram"
+              src="/contact/Frame-2.png"
+              alt="whatsapp"
               height={12}
               width={24}
             />
             <Image
-              src="/contact/frame.png"
-              alt="instagram"
+              src="/contact/Frame-3.png"
+              alt="youtube"
               height={12}
               width={24}
             />
