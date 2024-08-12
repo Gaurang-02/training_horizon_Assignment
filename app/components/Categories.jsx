@@ -13,23 +13,27 @@ const categories = [
   // Add the rest of the categories here...
 ];
 
+import Image from "next/image";
+
 const Categories = () => {
   return (
-    <section className="py-12">
-      <div className="flex justify-between px-20">
+    <section className="container mx-auto  w-full py-5 px-6">
+      <div className="flex flex-wrap justify-between">
       <h2 className=" text-2xl font-bold mb-8">Our Top Categories</h2>
         <button className="text-blue-400 text-xl hover:underline">View all</button>
       </div>
-      <div className="grid grid-cols-2 px-20 md:grid-cols-5 gap-4 0  ">
+      <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-4 ">
         {categories.map((category, index) => (
           <div
             key={index}
-            className="text-center p-4 border rounded-xl shadow-lg  hover:shadow-2xl"
+            className="text-center p-4 bg-white shadow-lg rounded-xl hover:shadow-2xl "
           >
-            <img
+            <Image
               src={category.image}
               alt={category.name}
               className="w-28 h-36 mx-auto mb-4 "
+              height={180}
+              width={180}
             />
             <h3 className="font-medium">{category.name}</h3>
           </div>

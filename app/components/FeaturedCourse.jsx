@@ -22,11 +22,13 @@ const courses = [
   // Add more course objects as needed
 ];
 
+import Image from "next/image";
+
 const FeaturedCourses = () => {
   return (
-    <section className="bg-black m-8">
+    <section className="bg-black m-8 ">
       <div
-        className=" mx-auto text-center bg-left-bottom bg-center bg-white bg-no-repeat py-12 my-10 p-16 bg-custom-bg fit"
+        className=" mx-auto text-center bg-left-bottom bg-center bg-white bg-no-repeat py-12 my-10 md:w-fit"
         style={{
           backgroundImage: `url('/images/background.png')`,
           backgroundSize: "62rem",
@@ -35,7 +37,7 @@ const FeaturedCourses = () => {
       >
         <div className="flex p-12">
           <div className="w-56 ">
-            <img src="/images/trophy.png" alt="image" />
+            <Image src="/images/trophy.png" alt="image" height={170} width={170} />
           </div>
           <div className="flex flex-col ml-10 items-start">
             <h2 className="text-3xl font-bold mb-3 ">
@@ -50,15 +52,15 @@ const FeaturedCourses = () => {
           </div>
         </div>
 
-        <div className="flex ">
+        <div className="flex md:w-fit">
           {courses.map((course) => (
             <div
               key={course.id}
               className="flex items-center m-12 bg-[#FFFFFF] border-[0.25rem] border-solid border-[#E4E4E4] hover:shadow-xl rounded-2xl "
             >
               <div className="h-[10rem] w-[1rem] bg-[#17A8FC] rounded-r-2xl"></div>
-              <div className="p-2">
-                <img src={course.imgSrc} alt={`${course.title}-Icon`} />
+              <div className="p-2 ">
+                <Image src={course.imgSrc} alt={`${course.title}-Icon`}  height={170} width={170}/>
               </div>
               <div className="p-5 ">
                 <div className="pt-2 pb-5">
@@ -66,7 +68,7 @@ const FeaturedCourses = () => {
                     type="button"
                     className="flex items-center w-[8rem] h-[1.75rem] text-white text-[0.75rem] font-inter bg-[#17A8FC] hover:bg-[#49b6f6] border-[#113448] rounded-3xl "
                   >
-                    <img src="/vector/v1.svg" alt="" className="p-2" />
+                    <Image src="/icons/handicap.png" alt="" className="p-2" height={170} width={170} />
                     {course.handicappedLabel}
                   </button>
                   <div className="flex justify-between">

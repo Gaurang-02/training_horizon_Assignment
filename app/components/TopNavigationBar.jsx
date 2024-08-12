@@ -11,8 +11,8 @@ const Header = () => {
     
 
       {/* Navbar */}
-      <div className="relative z-10 flex justify-between items-center p-5 bg-white shadow-md">
-        <div className="text-xl font-bold"></div>
+      <div className="relative z-10 flex justify-between items-center p-5 bg-white shadow-md md:w-full">
+        <div className="text-xl font-bold "></div>
         
         <nav>
           <ul className="flex space-x-16 justify-center">
@@ -43,7 +43,7 @@ const Header = () => {
             </li> */}
           </ul>
         </nav>
-        <div className="flex space-x-4 justify-evenly">
+        <div className="flex md:space-x-8 justify-evenly">
 
           <button className="text-black hover:underline">Join as teacher</button>
           <button className="text-black hover:underline">Log in</button>

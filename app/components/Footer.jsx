@@ -1,90 +1,99 @@
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <>
-      <footer className=" flex justify-evenly  w-full px-3 relative py-4 bg-white">
-        <div className="flex-col ">
-          <div className="flexCenter">
-            <img src="/images/logo.png" />
-            <h1 className="text-2xl font-bold w-1/2">Training Horizon</h1>
+    <footer className="bg-white flex flex-col h-full">
+      <div className="flex-grow px-4 m-8 h-full flex flex-col justify-between md:flex-row items-center">
+        <div className="flex flex-col m-5">
+          <div className="flex flex-wrap items-center md:items-start">
+            <Image
+              src="/images/logo.png"
+              alt="Training Horizons Logo"
+              className="w-16 h-16 mb-2"
+              height={360}
+              width={360}
+            />
+            <h2 className="text-lg ml-2 font-semibold">
+              TRAINING <br /> HORIZONS
+            </h2>
           </div>
-          <p className="flexCenter text-xs py-2">Offline batches and Classes</p>
-        </div>
-        <div className="flex-col py-5">
-          <h2 className="text-2xm font-bold">About Us</h2>
-          <div className="pt-5">
-            <Link href={"/"} className="text-sm text-gray-400">
-              Who we are
-            </Link>
-          </div>
-          <div className="pt-5">
-            <Link href={"/"} className="text-sm text-gray-400">
-              Work with us
-            </Link>
-          </div>
+          <p className="text-gray-600 ml-5">Offline Batches and classes</p>
         </div>
 
-        <div className="flex-col py-5">
-          <h2 className="text-xm font-bold ">Explore</h2>
-          <div className="pt-5">
-            <Link href={"/"} className="text-sm text-gray-400">
-              Batches and Classes
-            </Link>
-          </div>
-          <div className="pt-5">
-            <Link href={"/"} className="text-sm text-gray-400">
-              Community
-            </Link>
-          </div>
+        <div className="flex flex-col justify-evenly h-full m-5 text-center md:text-left">
+          <h3 className="font-bold text-gray-800">ABOUT US</h3>
+          <Link href={"/"} className="text-gray-400 mt-6">
+            Who we are
+          </Link>
+          <Link href={"/"} className="text-gray-400 mt-6">
+            Work with us
+          </Link>
         </div>
 
-        <div className="flex-col py-5">
-          <h2 className="text-xm font-bold">Legal</h2>
-          <div className="pt-5">
-            <Link href={"/"} className="text-sm text-gray-400">
-              Privacy policy
-            </Link>
-          </div>
-          <div className="pt-5">
-            <Link href={"/"} className="text-sm text-gray-400">
-              Terms & Conditions
-            </Link>
-          </div>
+        <div className="flex flex-col justify-evenly h-full m-5 text-center md:text-left">
+          <h3 className="font-bold text-gray-800 ">EXPLORE</h3>
+          <Link href={"/"} className="text-gray-400 mt-6">
+            Batches and Classes
+          </Link>
+          <Link href={"/"} className="text-gray-400 mt-6">
+            Community
+          </Link>
         </div>
 
-        <div className="flex-col py-5">
-          <h2 className="text-xm font-bold">Contact</h2>
-          <div className="flex pt-5 ">
-            <img src="/contact/call.png" />
-            <Link href={"/"} className="text-sm text-gray-400">
-              +922323092928
-            </Link>
+        <div className="flex flex-col justify-evenly h-full m-5 text-center md:text-left">
+          <h3 className="font-bold text-gray-800 ">LEGAL</h3>
+          <Link href={"/"} className="text-gray-400 mt-6">
+            Privacy policy
+          </Link>
+          <Link href={"/"} className="text-gray-400 mt-6">
+            Terms & conditions
+          </Link>
+        </div>
+
+        <div className="flex flex-col items-center h-full justify-evenly text-center m-5">
+          <h3 className="font-bold text-gray-800 ">CONTACT</h3>
+          <div className="flex flex-row items-center mt-6">
+            <Image
+              src="/contact/call.png"
+              alt="phone"
+              // className="h-[14px] w-[14px]"
+              height={14}
+              width={14}
+            />
+            <span className="text-gray-400 flex-col ">+922323092928</span>
           </div>
-          <div className="flexBetween pt-5">
-            <div className="flex flexBetween gap-4">
-              <Link href={"/"} className=" text-gray-400 ">
-                <img src="/contact/Frame-1.png"></img>
-              </Link>
-              <Link href={"/"} className=" text-gray-400 ">
-                <img src="/contact/Frame-2.png"></img>
-              </Link>
-              <Link href={"/"} className=" text-gray-400 ">
-                <img src="/contact/Frame-3.png"></img>
-              </Link>
-              <Link href={"/"} className=" text-gray-400 ">
-                <img src="/contact/Frame.png"></img>
-              </Link>
-            </div>
+          <div className="flex flex-row justify-evenly m-2 space-x-8 mt-6">
+            <Image
+              src="/contact/frame-1.png"
+              alt="instagram"
+              height={12}
+              width={24}
+            />
+            <Image
+              src="/contact/frame-2.png"
+              alt="instagram"
+              height={12}
+              width={24}
+            />
+            <Image
+              src="/contact/frame-3.png"
+              alt="instagram"
+              height={12}
+              width={24}
+            />
+            <Image
+              src="/contact/frame.png"
+              alt="instagram"
+              height={12}
+              width={24}
+            />
           </div>
         </div>
-      </footer>
-      <div className="flex justify-center pb-5 bg-white">
-        <h1 className="text-xs">© 2022 All Rights Reserved</h1>
       </div>
-    </>
+      <div className="flex items-center justify-center py-4 mt-2">
+        <p className="text-center text-gray-600">© 2022 All Rights Reserved</p>
+      </div>
+    </footer>
   );
-};
-
-export default Footer;
+}
