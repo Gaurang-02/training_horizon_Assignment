@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className=" flex justify-evenly container px-3 relative py-4 bg-white">
+      <footer className=" flex justify-evenly  w-full px-3 relative py-4 bg-white">
         <div className="flex-col ">
           <div className="flexCenter">
             <img src="/images/logo.png" />

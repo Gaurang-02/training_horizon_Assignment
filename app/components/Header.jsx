@@ -13,8 +13,8 @@ const Header = () => {
       Transform your productivity and deliver high-quality solutions customers <br /> want, and respond to threats and opportunities.
       </p>
       <Link href="#">
-        <span className="inline-block bg-[#FDCE29] hover:bg-yellow-500 text-black text-center font-bold p-5 rounded
-        h-[65px] w-[575px]">
+        <span className="inline-block bg-[#FDCE29]  hover:bg-yellow-500 text-black text-center font-bold p-5 rounded
+        md:h-[65px] md:w-[575px]">
           Register to get Exclusive offers
         </span>
       </Link>
