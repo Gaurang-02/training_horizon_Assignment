@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="bg-[#56C1FF] bg-cover bg-bottom bg-no-repeat text-white py-48 text-center p-10"
+    <header className="bg-[#56C1FF] bg-cover bg-bottom bg-no-repeat text-white py-48 text-center "
     style={{ backgroundImage: `url('/images/headerBg.png')` }}>
-      <h1 className="text-7xl font-bold mb-4 custom-shadow text-center">
-        Get your skills <br /> upgraded with us
+      <h1 className="text-7xl font-bold mb-4  custom-shadow text-center">
+        Get your skills <br />upgraded with us
       </h1>
       <p className="mb-6 text-center">
       Transform your productivity and deliver high-quality solutions customers <br /> want, and respond to threats and opportunities.
